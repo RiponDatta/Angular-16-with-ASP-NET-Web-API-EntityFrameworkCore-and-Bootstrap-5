@@ -1,0 +1,31 @@
+<div class="container">
+    <h1>Add new product</h1>
+    <div class="row">
+      <div class="col-6">
+        <form #form="ngForm" (ngSubmit)="updateProduct()">
+          <div class="mb-3">
+            <label for="id" class="form-label">Id</label>
+            <input type="text" class="form-control bg-light" id="id" name="id" readonly [(ngModel)]="updateProductRequest.id" />
+            </div>
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" name="name" [(ngModel)]="updateProductRequest.name" />
+          </div>
+          <div class="mb-3">
+            <label for="type" class="form-label">Type</label>
+            <input type="text" class="form-control" id="type" name="type" [(ngModel)]="updateProductRequest.type" />
+          </div>
+          <div class="mb-3">
+            <label for="color" class="form-label">Color</label>
+            <input type="text" class="form-control" id="color" name="color" [(ngModel)]="updateProductRequest.color" />
+          </div>
+          <div class="mb-3">
+            <label for="price" class="form-label">Price</label>
+            <input type="text" class="form-control" id="price" name="price" [(ngModel)]="updateProductRequest.price" />
+          </div>
+          <button type="submit" class="btn btn-primary">Update</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
